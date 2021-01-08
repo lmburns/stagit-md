@@ -80,6 +80,18 @@ writeheader(FILE *fp)
 		"</thead><tbody>\n", fp);
 }
 
+void
+writefooter(FILE *fp)
+{
+	fputs("</tbody>\n</table>\n</div>\n"
+		"<h2 id=\"contact\">Contact</h2>\n"
+		"<p>My email is <a href=\"burnsac@me.com\">burnsac@me.com</a> and my <a href=\"https://git.lucasburns.xyz/pgp\">PGP Key</a> can be found here, or you can run this command:</p>\n"
+		"<pre><code>curl -O https://git.lucasburns.xyz/pgp/pkey.asc</code></pre>\n"
+		"<p>These projects are also found on my <a href=\"https://github.com/burnsac5040\">GitHub</a></p>\n"
+		"</div>\n</body>\n</html>\n", fp);
+}
+
+
 int
 writelog(FILE *fp)
 {
@@ -210,6 +222,7 @@ main(int argc, char *argv[])
 		}
 		writelog(stdout);
 	}
+	writefooter(stdout);
 
 	/* cleanup */
 	git_repository_free(repo);
