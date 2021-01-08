@@ -21,9 +21,9 @@ if test "${name}" = ""; then
 fi
 
 # paths must be absolute
-reposdir="/srv/git"
+reposdir="/var/www/git"
 dir="${reposdir}/${name}"
-destdir="/srv/git/html"
+destdir="/var/www/git.lucas"
 cachefile=".stagit-build-cache"
 
 if ! test -d "${dir}"; then
@@ -67,7 +67,7 @@ ln -sfT "${dir}" ".git"
 
 # generate index arguments
 args=""
-for cat in "Projects" "Miscellanea"; do
+for cat in "Projects" "Forks"; do
     args="$args -c $cat"
     for dir in "$reposdir/"*.git/; do
         dir="${dir%/}"
@@ -81,7 +81,7 @@ for cat in "Projects" "Miscellanea"; do
 done
 
 if [ -n "$stagit_uncat" ]; then
-    args="$args -c Uncategorized"
+    args="$args -c Other"
     for dir in "$reposdir/"*.git/; do
         dir="${dir%/}"
         [ -f "$dir/git-daemon-export-ok" ] && [ ! -f "$dir/category" ] && \

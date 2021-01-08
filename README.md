@@ -1,6 +1,11 @@
 stagit
 ======
 
+Fork of Oscar Benedito's fork of the original stagit.  I just modified some of the build files to fit my needs.  It is still a work in process for me but I wanted to keep track of it.
+
+Original
+========
+
 Personal fork of static git page generator. It generates static HTML pages for a
 git repository.
 

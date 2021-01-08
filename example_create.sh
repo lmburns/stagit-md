@@ -17,9 +17,9 @@
 # - sh example_create.sh
 
 # path must be absolute
-reposdir="/srv/git"
-webdir="/srv/git/html"
-defaultdir="/usr/local/share/doc/stagit"
+reposdir="/var/www/git"
+webdir="/var/www/git.lucas"
+defaultdir="/root/stagit-alt/stagit/"
 
 mkdir -p "$webdir" || exit 1
 
