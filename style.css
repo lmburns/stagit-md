@@ -72,6 +72,10 @@ a {
 
 .url {
 	font-family: monospace;
+	padding: 1px 5px;
+	background-color: #eee;
+	border: 1px solid #ddd;
+	border-radius: 5px;
 }
 
 #home h1 {
