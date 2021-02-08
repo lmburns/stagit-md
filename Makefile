@@ -54,7 +54,7 @@ dist:
 	mkdir -p ${NAME}-${VERSION}
 	cp -f ${MAN1} ${HDR} ${SRC} ${COMPATSRC} ${DOC} \
 		Makefile favicon.png logo.png style.css \
-		example_create.sh example_post-receive.sh \
+		example_create.sh post-receive \
 		${NAME}-${VERSION}
 	# make tarball
 	tar -cf - ${NAME}-${VERSION} | \
@@ -83,7 +83,7 @@ install: all
 		favicon.png\
 		logo.png\
 		example_create.sh\
-		example_post-receive.sh\
+		post-receive\
 		README.md\
 		${DESTDIR}${DOCPREFIX}
 	# installing manual pages.
@@ -100,7 +100,7 @@ uninstall:
 		${DESTDIR}${DOCPREFIX}/favicon.png\
 		${DESTDIR}${DOCPREFIX}/logo.png\
 		${DESTDIR}${DOCPREFIX}/example_create.sh\
-		${DESTDIR}${DOCPREFIX}/example_post-receive.sh\
+		${DESTDIR}${DOCPREFIX}/post-receive\
 		${DESTDIR}${DOCPREFIX}/README.md
 	-rmdir ${DESTDIR}${DOCPREFIX}
 	# removing manual pages.
