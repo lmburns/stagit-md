@@ -85,8 +85,8 @@ writefooter(FILE *fp)
 {
 	fputs("</tbody>\n</table>\n</div>\n"
 		"<h2 id=\"contact\">Contact</h2>\n"
-		"<p>My email is <a href=\"#\" onclick=\"return false;\">lucas@burnsac.xyz</a> and my <a href=\"https://git.lucasburns.xyz/pgp\">PGP Key</a> can be found here, or you can run this command:</p>\n"
-		"<pre><code>curl -O https://git.lucasburns.xyz/pgp/pkey.asc</code></pre>\n"
+		"<p>My email is <a href=\"#\" onclick=\"return false;\">lucas@burnsac.xyz</a> and my <a href=\"https://git.burnsac.xyz/pgp\">PGP Key</a> can be found here, or you can run this command:</p>\n"
+		"<pre><code>curl -O https://git.burnsac.xyz/pgp/pkey.asc</code></pre>\n"
 		"<p>These projects are also found on my <a href=\"https://github.com/burnsac5040\">GitHub</a></p>\n"
 		"</div>\n</body>\n</html>\n", fp);
 }
