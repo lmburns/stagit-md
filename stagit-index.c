@@ -87,7 +87,7 @@ writefooter(FILE *fp)
 		"<h2 id=\"contact\">Contact</h2>\n"
 		"<p>My email is <a href=\"#\" onclick=\"return false;\">lucas@burnsac.xyz</a> and my <a href=\"https://git.burnsac.xyz/pgp\">PGP Key</a> can be found here, or you can run this command:</p>\n"
 		"<pre><code>curl -O https://git.burnsac.xyz/pgp/pkey.asc</code></pre>\n"
-		"<p>These projects are also found on my <a href=\"https://github.com/burnsac5040\">GitHub</a></p>\n"
+		"<p>These projects are also found on my <a href=\"https://github.com/lmburns\">GitHub</a></p>\n"
 		"</div>\n</body>\n</html>\n", fp);
 }
 
