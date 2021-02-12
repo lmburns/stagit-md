@@ -54,7 +54,7 @@ dist:
 	mkdir -p ${NAME}-${VERSION}
 	cp -f ${MAN1} ${HDR} ${SRC} ${COMPATSRC} ${DOC} \
 		Makefile favicon.png logo.png style.css \
-		example_create.sh post-receive \
+		example_create.sh post-receive grm \
 		${NAME}-${VERSION}
 	# make tarball
 	tar -cf - ${NAME}-${VERSION} | \
@@ -77,6 +77,8 @@ install: all
 	mkdir -p ${DESTDIR}${PREFIX}/bin
 	cp -f ${BIN} ${DESTDIR}${PREFIX}/bin
 	for f in ${BIN}; do chmod 755 ${DESTDIR}${PREFIX}/bin/$$f; done
+	cp -f grm ${DESTDIR}${PREFIX}/bin
+	chmod 755 ${DESTDIR}${PREFIX}/bin/grm
 	# installing example files.
 	mkdir -p ${DESTDIR}${DOCPREFIX}
 	cp -f style.css\
