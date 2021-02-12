@@ -1,7 +1,8 @@
 stagit
 ======
 
-Fork of Oscar Benedito's fork of the original stagit.  I just modified some of the build files to fit my needs.  It is still a work in process for me but I wanted to keep track of it.
+Fork of Oscar Benedito's fork of the original stagit.
+I modified some of the build files to fit my needs, changed the logo.png and favicon.png, as well as added a script `grm` to generate, list, recompile, etc git repos.
 
 Original
 ========
