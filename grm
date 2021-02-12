@@ -121,7 +121,7 @@ ${BLUE}enter index [default: ${GREEN}1${BLUE}]${RESET}"
     1|Projects) ccat="Projects" ;;
     2|Forks) ccat="Forks" ;;
     *) printf "%b\n" "${YELLOW}category defaults to ${GREEN}Projects${RESET}"
-       ccat="Projects" ;;
+       ccat=$default_cat ;;
 
   esac
 
@@ -160,6 +160,9 @@ ${BLUE}enter index [default: ${GREEN}1${BLUE}]${RESET}"
 
   echo "linking .git to main folder"
   ln -s "$repo_path" "$STAGIT_WEB_ROOT"
+
+  echo "generating index.html for .git page"
+  $defaultdir/index-gen $repo_desc $repo_name > $repo_path/index.html
 
   echo "done!"
 }
