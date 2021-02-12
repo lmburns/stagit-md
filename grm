@@ -22,6 +22,9 @@ GRM_POSTRECV_HOOK="/var/www/post-receive"
 # root directory of stagit web pages
 STAGIT_WEB_ROOT="/var/www/git.burns"
 
+# directory where this was cloned
+DEFAULT_DIR="/root/stagit-alt/stagit-md"
+
 #                                            #
 #                                            #
 #--------------------------------------------#
@@ -162,7 +165,7 @@ ${BLUE}enter index [default: ${GREEN}1${BLUE}]${RESET}"
   ln -s "$repo_path" "$STAGIT_WEB_ROOT"
 
   echo "generating index.html for .git page"
-  $defaultdir/index-gen $repo_desc $repo_name > $repo_path/index.html
+  $DEFAULT_DIR/index-gen $repo_desc $repo_name > $repo_path/index.html
 
   echo "done!"
 }
