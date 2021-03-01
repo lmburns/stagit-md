@@ -9,12 +9,20 @@
 
 body {
 	color: #000;
-	background-color: #fff;
+	background-color: #242727;
 	font-family: sans-serif;
 	max-width: 800px;
 	margin: 8px auto;
 	padding: 5px;
 	line-height: 1.5;
+}
+
+a:link {
+  color: #719190;
+}
+
+a:visited {
+  color: #719190;
 }
 
 #branches,

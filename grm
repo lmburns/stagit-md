@@ -125,7 +125,6 @@ ${BLUE}enter index [default: ${GREEN}1${BLUE}]${RESET}"
     2|Forks) ccat="Forks" ;;
     *) printf "%b\n" "${YELLOW}category defaults to ${GREEN}Projects${RESET}"
        ccat=$default_cat ;;
-
   esac
 
   printf "%b%s%b\n> " "${BLUE}description [${GREEN}" "$default_desc" "${BLUE}]${RESET}"
@@ -166,6 +165,7 @@ ${BLUE}enter index [default: ${GREEN}1${BLUE}]${RESET}"
 
   echo "generating index.html for .git page"
   $DEFAULT_DIR/index-gen $repo_name $repo_desc > $repo_path/index.html
+  chown git:git $repo_path/index.html
 
   echo "done!"
 }
