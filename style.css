@@ -4,7 +4,7 @@
 	--links: #00c;
 	--border: #d2d2d2;
 	--gray: #777;
-	--hover-bg: #eee;
+	--hover-bg: #676767;
 }
 
 body {
@@ -81,7 +81,7 @@ a {
 .url {
 	font-family: monospace;
 	padding: 1px 5px;
-	background-color: #eee;
+	background-color: #242727;
 	border: 1px solid #ddd;
 	border-radius: 5px;
 }
