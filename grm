@@ -50,7 +50,7 @@ recompile_repo() {
   rm -rf "commit" "file"             && \
   stagit -c "$cachefile" "$repo_dir" && \
   ln -sf log.html index.html         && \
-  ln -sf ../style.css style.css      && \
+  ln -sf ../styles/style.css style.css      && \
   ln -sf ../logo.png logo.png        && \
   ln -sf ../favicon.png favicon.png
   echo "[$1] done!"
