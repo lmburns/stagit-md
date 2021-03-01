@@ -25,7 +25,7 @@ destdir="/var/www/git.burns"
 cachefile=".stagit-build-cache"
 defaultdir="/root/stagit-alt/stagit-md"
 
-ln -s "$defaultdir/style.css" "$destdir/style.css" 2> /dev/null
+ln -s "$defaultdir/style.css" "$destdir/style/style.css" 2> /dev/null
 ln -s "$defaultdir/logo.png" "$destdir/logo.png" 2> /dev/null
 ln -s "$defaultdir/favicon.png" "$destdir/favicon.png" 2> /dev/null
 

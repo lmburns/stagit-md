@@ -70,7 +70,7 @@ writeheader(FILE *fp)
 		"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
 		"<title>Git Repositories | Lucas Burns</title>\n", fp);
 	fprintf(fp, "<link rel=\"icon\" type=\"image/png\" href=\"%sfavicon.png\" />\n", relpath);
-	fprintf(fp, "<link rel=\"stylesheet\" type=\"text/css\" href=\"../styles/%sstyle.css\" />\n", relpath);
+	fprintf(fp, "<link rel=\"stylesheet\" type=\"text/css\" href=\"../%sstyle/style.css\" />\n", relpath);
 	fputs("</head>\n<body id=\"home\">\n<h1>", fp);
 	xmlencode(fp, description, strlen(description));
 	fputs("</h1>\n<div id=\"content\">\n"
