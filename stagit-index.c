@@ -85,7 +85,7 @@ writefooter(FILE *fp)
 {
 	fputs("</tbody>\n</table>\n</div>\n"
 		"<h2 id=\"contact\">Contact</h2>\n"
-		"<p>My email is <a href=\"#\" onclick=\"return false;\">lucas@burnsac.xyz</a> and my GPG key can be found <a href=\"https://burnsac.xyz/gpg\">here</a>, <a href=\"gpg/pkey.asc\">downloaded</a>, or you can run this command:</p>\n"
+		"<p>My email is <a href=\"#\" onclick=\"return false;\">lucas@burnsac.xyz</a> and my GPG key can be found <a href=\"https://burnsac.xyz/gpg\">here</a>, <a href=\"https://burnsac.xyz/gpg/pkey.asc\">downloaded</a>, or you can run this command:</p>\n"
 		"<pre><code>curl -L https://burnsac.xyz/gpg/pkey.asc | gpg --import</code></pre>\n"
 		"<p>These projects are also found on my <a href=\"https://github.com/lmburns\">GitHub</a></p>\n"
 		"</div>\n</body>\n</html>\n", fp);
