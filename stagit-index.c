@@ -71,6 +71,7 @@ writeheader(FILE *fp)
 		"<title>Git Repositories | Lucas Burns</title>\n", fp);
 	fprintf(fp, "<link rel=\"icon\" type=\"image/png\" href=\"%sfavicon.png\" />\n", relpath);
 	fprintf(fp, "<link rel=\"stylesheet\" type=\"text/css\" href=\"%sstyles/style.css\" />\n", relpath);
+  fputs("<link rel=\"stylesheet\" href=\"//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css\"/>\n", fp);
 	fputs("</head>\n<body id=\"home\">\n<h1>", fp);
 	xmlencode(fp, description, strlen(description));
 	fputs("</h1>\n<div id=\"content\">\n"

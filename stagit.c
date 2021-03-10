@@ -481,6 +481,7 @@ writeheader(FILE *fp, const char *title)
 	fprintf(fp, "<link rel=\"alternate\" type=\"application/atom+xml\" title=\"%s Atom Feed (tags)\" href=\"%stags.xml\" />\n",
 	        name, relpath);
 	fprintf(fp, "<link rel=\"stylesheet\" type=\"text/css\" href=\"../%sstyles/style.css\" />\n", relpath);
+  fputs("<link rel=\"stylesheet\" href=\"//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css\"/>\n", fp);
 	fputs("</head>\n<body>\n<div id=\"head\"><table><tr><td>", fp);
 	fprintf(fp, "<a class=\"logo\" href=\"../%s\"><img src=\"../%slogo.png\" alt=\"\" width=\"32\" height=\"32\" /></a>",
 	        relpath, relpath);
