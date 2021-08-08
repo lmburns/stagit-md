@@ -14,7 +14,7 @@ GRM_REPOS_ROOT="/var/www/git"
 GRM_OWNER="lmburns"
 
 # default url prefix (without ending slash)
-GRM_URL_PREFIX="https://git.burnsac.xyz"
+GRM_URL_PREFIX="https://git.lmburns.com"
 
 # path of the post-receive hooks for stagit
 GRM_POSTRECV_HOOK="/var/www/post-receive"
